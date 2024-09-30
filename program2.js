@@ -16,13 +16,13 @@ var romanToInt = function(s) {
     let res = 0;
 
     for (let i = 0; i < s.length; i++) {
-        let curr = r[s[i]];
+        let c = r[s[i]];
         let n= r[s[i + 1]];
 
-        if (n && curr < n) {
-            res -= curr;
+        if (n && c < n) {
+            res -= c;
         } else {
-            res += curr;
+            res += c;
         }
     }
 
